@@ -15,8 +15,8 @@
         pyt(x,y) = sqrt(x^2 + y^2)
         ipyt(z,y) = sqrt(z^2 - y^2)
 
-        DioiD.inverse(::Val{pyt}) = ipyt
-        DioiD.inverse(::Val{ipyt}) = pyt
+        DIOID.inverse(::Val{pyt}) = ipyt
+        DIOID.inverse(::Val{ipyt}) = pyt
 
         funs = [+, *, pyt, ipyt]
         for ⨁ ∈ funs, ⨀ ∈ funs

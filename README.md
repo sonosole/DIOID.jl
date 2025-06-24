@@ -2,7 +2,7 @@
 
 ```julia
 using Pkg
-Pkg.add("DioiD") # if registered, other wise use this repo's url as input
+Pkg.add("DIOID") # if registered, other wise use this repo's url as input
 ```
 
 # 2. Customized Semirings 🛠️
