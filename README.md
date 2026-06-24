@@ -51,6 +51,8 @@ julia> Dioid{min,+}(2) * Dioid{min,+}(5)
 
 With this definition, the polynomial function $f(x,y) = x^3 + xy + y^2$ becomes piecewise linear function $f(x,y) = {\rm min}(3x, \ x+y, \ 2y)$.
 
+> 🍒  Symbols \oplus ⊕ and \odot ⊙ may be used instead of + and *
+
 ## 2.2 Customizing 👨‍🍳🍽️
 
 A semiring is an algebraic structure with two binary operations $\oplus$ and $\odot$ over a set $S$. Mathematically, a semiring is a system $(S,\oplus,\odot,\bar{0},\bar{1})$ where:
@@ -399,3 +401,15 @@ julia> sin(Dioid{max,+}(π))
 
 * Marc Pouly. *Semirings for Breakfast*
 * Baccelli, François et al. *Synchronization and Linearity: An Algebra for Discrete Event Systems*
+
+# 9. Similar Pkgs **🚐🚑🚒**
+
+1. [TropicalSemiring](https://platform.juliahub.com/ui/Packages/General/TropicalSemiring) provides max-plus and min-plus algebra
+2. [TropicalNumbers](https://github.com/TensorBFS/TropicalNumbers.jl) and its CPU matrix version [TropicalGEMM](https://github.com/TensorBFS/TropicalGEMM.jl) and its NVIDIA GPU matrix version [CuTropicalGEMM](https://github.com/TensorBFS/CuTropicalGEMM.jl)
+3. [SimpleTropical](https://github.com/scheinerman/SimpleTropical.jl/tree/master) provides tropical (min-plus) arithmetic
+4. [Semirings](https://github.com/FAST-ASR/Semirings.jl) provides common semirings in different data structs
+
+# 10. Why This Package ❓
+
++ This packge provides a unified way to construct many kinds of Semirings by users themselves
++ There are several upcoming packages depend on this package
