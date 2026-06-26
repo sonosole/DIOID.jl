@@ -1,4 +1,4 @@
-module DIOID
+module Dioids
 
 include("prekits/logaddfn.jl")
 
@@ -68,4 +68,4 @@ export lcsuffix
 export iszeroclosed, is0closed
 
 
-end # module DIOID
+end # module Dioids

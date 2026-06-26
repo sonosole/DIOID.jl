@@ -1,7 +1,7 @@
-using DIOID
+using Dioids
 using Test
 
-@testset verbose=true "DIOID" begin
+@testset verbose=true "Dioids" begin
     include("addmul.jl")
     include("adj.jl")
     include("alias.jl")
